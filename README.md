@@ -1,11 +1,12 @@
 # ml-predictor
 
 ## Overview 
-The idea behind “Real Estate Price Predictor” project was to apply Machine Learning technics to predict real estate prices in a particular geography.
+The idea behind “Real Estate Price Predictor” project was to apply Machine Learning techniques to predict real estate prices in a particular geography.
 
 The key hypothesis that we wanted to test is that leveraging variables like geographic location, house size, historic house prices and median income in a particular location could serve as good predictors for future house prices.
 
 We also wanted to understand what, if any, limitations exist when using the above inputs to predict future house prices
+
 
 ## Data Summary  
 
