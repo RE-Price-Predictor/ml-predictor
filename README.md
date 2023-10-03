@@ -32,10 +32,10 @@ After evaluating initial results, we decided to leverage Random Forrest model th
 
 
 ### Random Forrest models:
-- Option 1: No Income, Adj-ed price. R^2: = 0.959
+- Option 1: No Income, Adj-ed price. R^2: = 0.918
     - [Colab Notebook](https://drive.google.com/file/d/1lm6FSZkOjQHrh370gFHIOv4Cb1ttPVtX/view?usp=sharing)
 
-- Option 2: Income, Adj-ed price. R^2: = 0.968
+- Option 2: Income, Adj-ed price. R^2: = 0.976
     - [Colab Notebook](https://drive.google.com/file/d/1VW0u7EV1SOhQ3hfOtzSRNjJALdIyeVSz/view?usp=sharing)
 
 - Option 3 - Income, Adj-ed price < $2MM 0.959 
