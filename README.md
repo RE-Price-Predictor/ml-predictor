@@ -24,10 +24,14 @@ Historical house prices were adjusted to inflation using 3% yearly inflation rat
 Random Forest and Linear Regression were initially used to predict future house prices in NY state
 
 After evaluating initial results, we decided to leverage Random Forest model that was delivering more accurate predictions compared to Linear Regression
+---
+### Data Clean-Up and Model Training
+- Reading in and merging the data for historical house sales and median household incomes
+- Dropping rows with NaN from the combined data frame
+- Removing outliers
+- Creating training and testing datasets with the following breakdown (2/3 training data vs. 1/3 Testing data)
 
-
-
-
+---
 
 ### Linear Regression Model: Show the Importance of Adjusting for Inflation
 - Option 1: NOT Adj-ed price by inflation < $10MM; All features 
@@ -35,46 +39,37 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 
 - Option 2 - Adj-ed price by inflation < $10MM; All features 
     - [Colab Notebook](https://drive.google.com/file/d/17bpFn2w5ZPTfsFggHYK-2BRtuFylCtCW/view?usp=sharing)
- 
 
-### Random Forrest models:
+
+<img src="./Resources/images/linear_regression_all.png" width="350" title="hover text"><br>
+
+
+
+### Random Forrest Regression Models:
 - Option 1: No Income, Adj-ed price. R^2: = 0.918
     - [Colab Notebook](https://drive.google.com/file/d/1lm6FSZkOjQHrh370gFHIOv4Cb1ttPVtX/view?usp=sharing)
 
+    - <img src="./Resources/1_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
+
 - Option 2: Income, Adj-ed price. R^2: = 0.976
     - [Colab Notebook](https://drive.google.com/file/d/1VW0u7EV1SOhQ3hfOtzSRNjJALdIyeVSz/view?usp=sharing)
- 
+    - <img src="./Resources/2_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
+
 - Option 3 - Income, Adj-ed price < $2MM 0.959 
     - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
- 
-### Data Clean Up and Model Training
-Reading in and merging the data for historical house sales and median household incomes
 
-Dropping rows with NaN from the combined dataframe
+    - <img src="./Resources/3_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
 
-Removing outliers
+---
+### Summary and Postmortem
+- Our original data set was incomplete 
+  - Data didn’t contain information for all US states
+  - Many records had missing values for # beds/baths and/or house sizes 
+- The original data set didn’t contain all the information we wanted to use: Median Household income had to be sourced separately.
+- Random Forrest Regression in this case appears to be a better fit for this data set.
 
-Creating training and testing datasets with the following break down (2/3 training data vs. 1/3 Testing data)
-
-### Discussion and Postmortem
-
-Our original data set was incomplete 
-  Data didn’t contain information for all US states
-  Many records had missing values for # beds/baths and/or house sizes 
-
-Original data set didn’t contain all the information we wanted to use:  
-  Median Household income had to be source separately. 
-
+### Next Steps
 Model accuracy decreased as we decreased the maximum house prices used in the model. This is potentially due to other factors/variables that are not part of our current model inputs:
-  School district score
-  Neighbourhood quality
-  Commute
-
-
-
-
-
-
-
-
-
+- School district score
+- Neighbourhood quality
+- Commute
