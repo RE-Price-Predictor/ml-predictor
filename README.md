@@ -40,8 +40,7 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 - Option 2 - Adj-ed price by inflation < $10MM; All features 
     - [Colab Notebook](https://drive.google.com/file/d/17bpFn2w5ZPTfsFggHYK-2BRtuFylCtCW/view?usp=sharing)
 
-
-<img src="./Resources/images/linear_regression_all.png" width="350" title="hover text"><br>
+    - <img src="Resources/images/01_Price-Predictor-Linear-Regression.png" width="350"><br>
 
 
 
@@ -49,16 +48,16 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 - Option 1: No Income, Adj-ed price. R^2: = 0.918
     - [Colab Notebook](https://drive.google.com/file/d/1lm6FSZkOjQHrh370gFHIOv4Cb1ttPVtX/view?usp=sharing)
 
-    - <img src="./Resources/1_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
+    - <img src="Resources/images/1_Random_Forest_Price-Predictor.png" width="350"><br>
 
 - Option 2: Income, Adj-ed price. R^2: = 0.976
     - [Colab Notebook](https://drive.google.com/file/d/1VW0u7EV1SOhQ3hfOtzSRNjJALdIyeVSz/view?usp=sharing)
-    - <img src="./Resources/2_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
+    - <img src="Resources/images/2_Random_Forest_Price-Predictor.png" width="350"><br>
 
 - Option 3 - Income, Adj-ed price < $2MM 0.959 
     - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
 
-    - <img src="./Resources/3_Random_Forest_Price-Predictor.png.png" width="350" title="hover text"><br>
+    - <img src="Resources/images/3_Random_Forest_Price-Predictor.png" width="350"><br>
 
 ---
 ### Summary and Postmortem
