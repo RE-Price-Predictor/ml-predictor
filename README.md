@@ -36,11 +36,6 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 - Option 2 - Adj-ed price by inflation < $10MM; All features 
     - [Colab Notebook](https://drive.google.com/file/d/17bpFn2w5ZPTfsFggHYK-2BRtuFylCtCW/view?usp=sharing)
  
-- Option 3 - Income, Adj-ed price < $2MM 0.959 
-    - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
-
-
-
 
 ### Random Forrest models:
 - Option 1: No Income, Adj-ed price. R^2: = 0.918
@@ -49,10 +44,16 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 - Option 2: Income, Adj-ed price. R^2: = 0.976
     - [Colab Notebook](https://drive.google.com/file/d/1VW0u7EV1SOhQ3hfOtzSRNjJALdIyeVSz/view?usp=sharing)
  
+- Option 3 - Income, Adj-ed price < $2MM 0.959 
+    - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
+ 
 ### Data Clean Up and Model Training
 Reading in and merging the data for historical house sales and median household incomes
+
 Dropping rows with NaN from the combined dataframe
+
 Removing outliers
+
 Creating training and testing datasets with the following break down (2/3 training data vs. 1/3 Testing data)
 
 ### Discussion and Postmortem
