@@ -35,6 +35,9 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 
 - Option 2 - Adj-ed price by inflation < $10MM; All features 
     - [Colab Notebook](https://drive.google.com/file/d/17bpFn2w5ZPTfsFggHYK-2BRtuFylCtCW/view?usp=sharing)
+ 
+- Option 3 - Income, Adj-ed price < $2MM 0.959 
+    - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
 
 
 
@@ -69,8 +72,7 @@ Model accuracy decreased as we decreased the maximum house prices used in the mo
 
 
 
-- Option 3 - Income, Adj-ed price < $2MM 0.959 
-    - [Colab Notebook](https://drive.google.com/file/d/1ntigbYutpz98qIb6KCoG0gpw17y-YJcn/view?usp=sharing)
+
 
 
 
