@@ -40,7 +40,7 @@ After evaluating initial results, we decided to leverage Random Forest model tha
 - Option 2 - Adj-ed price by inflation < $10MM; All features 
     - [Colab Notebook](https://drive.google.com/file/d/17bpFn2w5ZPTfsFggHYK-2BRtuFylCtCW/view?usp=sharing)
 
-    - <img src="Resources/images/01_Price-Predictor-Linear-Regression.png" width="350"><br>
+    - <img src="Resources/images/linear_regression_all.png" width="350"><br>
 
 
 
